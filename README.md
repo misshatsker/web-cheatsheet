@@ -1,2 +1,5 @@
 # web-cheatsheet
-SHA - basically an ID number for each commit.
+## Table of content
+
+1. [Git and Github](/git.md)
+
