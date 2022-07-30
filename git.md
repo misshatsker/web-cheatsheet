@@ -1,5 +1,4 @@
-***SHA***
-  basically an ID number for each commit.
+***SHA*** -basically an ID number for each commit.
 ___
 ***Version Control System / Source Code Manager*** - A version control system (abbreviated as VCS) is a tool that manages different versions of source code. A source code manager (abbreviated as SCM) is another name for a version control system.
 ___
