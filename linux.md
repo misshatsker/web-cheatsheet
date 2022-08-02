@@ -23,6 +23,13 @@ ___
 ***pwd*** -  To find out where you are, which stands for "print working directory".
 ___
 ***cp*** (cp directory/namefile namefile2)- The copy command.
+
+***cp -r ~jester/jokes ~*** - (jester/jokes - example) - This would copy the entire "jokes" directory tree.
+
+The ***"Use%"*** column shows the percentage of user space that is currently used.
+
+The ***"Mounted on"*** column shows where the disks reside in your filesystem tree. This column raises enough questions to warrant a separate page of explanation.
+
 ___
 ***rm*** (rm namefile) - The remove file.
 
@@ -135,6 +142,59 @@ To display all of the print jobs in a different queue, use the '-P' option, just
 For example, to remove print job 148 from print queue "hp14", you would type
 
 - lprm -P hp14 148
+___
+***df*** - To see how much disk space you have left on your system.
+
+***df ~*** - if you wanted to get statistics for the disk where your home directory resides.
+
+***df .*** - to find out how much disk space is free on the disk where your current directory resides.
+___
+
+***rm -r namefile*** - to remove an entire directory tree.
+___
+***ps*** - shows process status.
+
+***ps aux*** - to examine running programs. To get a detailed list of all processes.
+
+- USER - the process owner
+
+- PID - the process ID (you will need this)
+
+- START - the date or time when this process started
+
+- TIME - the amount of CPU time used by this process
+
+- COMMAND - the command that started the process.
+
+***ps aux| grep namefile*** - the command to see whether or not the "namefile" process is still running.
+___
+***"|"*** - (it's above the "\" on your keyboard). It sends the output of a command as the input to another command. In other words, it "pipes" data from one command to another.
+
+ For example, when we wanted to print out Jester's two joke files, we could have saved ourselves a few steps by typing this
+
+- cat joke-1 joke-2 | lpr -P zephyr
+
+The output of "cat joke-1 joke-2" is sent directly to the printer, rather than to a file.
+___
+***grep*** - to find patterns in data.
+
+For example, if you wanted to find every occurrence of the word "gold" in file "metals", you would type
+
+- grep gold metals
+
+This would display every line of text in file "metals" that contained the pattern "gold".
+
+To use "grep" with a pipe, you simply leave out the file argument (just like we did with the "lpr -P zephyr" command on the previous page). For example, to list only those lines containing the word rabbit in Jester's joke files, you would type
+
+- cat joke-1 joke-2 | grep rabbit
+___
+***kill PID*** - To kill a process. 
+
+- where PID is the ID of the process you want to kill.
+
+***kill -9 PID*** - means "kill immediately".
+
+- where PID is the ID of the process you want to kill.
 ___
 
 
