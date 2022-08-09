@@ -48,3 +48,16 @@ ___
 
 ***form*** - collecting information to send somewhere else.
 
+-  ***form action=""*** - determines where the information is sent.
+- ***form method=""*** - is assigned a HTTP verb that is included in the HTTP request.
+
+***input*** - determines how it renders on the web page and what kind of data it can accept.
+- ***input type="text" name="" value="" id=""***
+- ***input type="password" name="" value="" id=""***
+- ***input type="number" name="" value="" id=""***
+- ***input type="range" name="" value="" id=""*** - defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100.
+- ***input type="checkbox" name="" value="" id=""*** - The checkbox is shown as a square box that is ticked (checked) when activated. Checkboxes are used to let a user select one or more options of a limited number of choices.
+- ***input type="radio" name="" value="" id=""*** - Checkboxes work well if we want to present users with multiple options and let them choose one or more of the options.
+
+***label for="(write this id in input)"*** - is used to define a caption for an element in an HTML form. 
+
