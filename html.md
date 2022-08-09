@@ -23,4 +23,28 @@ ___
 ***a href="./index.html"*** - (index.html- folder) open a specific folder.
 
 ***a href="#introduction"*** - when we have ***div id="introduction"***. 
-____
+___
+***TABLE***
+
+***table*** - will contain all of the tabular data we plan on displaying.
+
+***thead*** - defines a set of rows defining the head of the columns of the table.
+
+***tbody*** - used to group the body content in an HTML table.
+
+***tr*** - to add rows.
+
+***th*** - add titles to rows and columns.
+- ***th scope="col"***  - this value makes it clear that the heading is for a column.
+- ***th scope="row"*** - this value makes it clear that the heading is for a row.
+
+***td*** - add data.
+- ***td colspan=""*** - defines the number of columns a table cell should span.
+- ***td rowspan="2*** - specifies the number of rows a cell should span.
+
+***tfoot*** - defines a set of rows summarizing the columns of the table.
+___
+***FORM***
+
+***form*** - collecting information to send somewhere else.
+
