@@ -58,6 +58,20 @@ ___
 - ***input type="range" name="" value="" id=""*** - defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100.
 - ***input type="checkbox" name="" value="" id=""*** - The checkbox is shown as a square box that is ticked (checked) when activated. Checkboxes are used to let a user select one or more options of a limited number of choices.
 - ***input type="radio" name="" value="" id=""*** - Checkboxes work well if we want to present users with multiple options and let them choose one or more of the options.
+- ***input type="submit" value=""*** - users click on it when they are finished with filling out information in the form and they’re ready to send it off. 
 
 ***label for="(write this id in input)"*** - is used to define a caption for an element in an HTML form. 
+
+***select id="" name=""*** - to create the dropdown list.
+- ***option  value=""*** - To populate the dropdown list.
+
+***datalist*** - is used with an ***input type="text"*** element. The ***input*** creates a text field that users can type into and filter options from the ***datalist***. (datalist id="")
+(input type="text" list="" id="" name="")
+- ***datalist id=""*** then
+***option value=""***
+
+***textarea id="" name="" rows="" cols="*** - represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.
+
+
+
 
