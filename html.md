@@ -59,6 +59,11 @@ ___
 - ***input type="checkbox" name="" value="" id=""*** - The checkbox is shown as a square box that is ticked (checked) when activated. Checkboxes are used to let a user select one or more options of a limited number of choices.
 - ***input type="radio" name="" value="" id=""*** - Checkboxes work well if we want to present users with multiple options and let them choose one or more of the options.
 - ***input type="submit" value=""*** - users click on it when they are finished with filling out information in the form and they’re ready to send it off. 
+- ***input id="" name="" type="" required*** - it specifies that an input field must be filled out before submitting the form.
+- ***input id="" name="" type="number" min="" max=""*** - To set a minimum acceptable value, we use the min attribute and assign a value. On the flip side, to set a maximum acceptable value, we assign the max attribute a value.
+- ***input id="" name="" type="" minlength="" maxlength="" required*** - To set a minimum number of characters for a text field.
+- ***input id="" name="" type="" required pattern="[0-9]{14,16}"*** - when we want user input to follow specific guidelines, we use the pattern attribute and assign it a regular expression, or regex. Regular expressions are a sequence of characters that make up a search pattern. If the input matches the regex, the form can be submitted.
+
 
 ***label for="(write this id in input)"*** - is used to define a caption for an element in an HTML form. 
 
