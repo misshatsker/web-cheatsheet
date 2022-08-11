@@ -77,7 +77,19 @@ ___
 
 ***textarea id="" name="" rows="" cols="*** - represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.
 ___
+***Semantic***
 
+***section*** - defines elements in a document, such as chapters, headings, or any other area of the document with the same theme.
 
+***article*** - holds content that makes sense on its own such as articles, blogs, comments, etc.
+
+***aside*** - contains information that is related to the main content, but not required in order to understand the dominant information.
+
+***figure*** - encapsulates all types of media.
+
+***figcaption*** -  is used to describe the media in figure.
+
+***video, embed, and audio*** - elements are used for media files.
+___
 
 
