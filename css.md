@@ -14,6 +14,7 @@ ___
 
 ***rel***  — this attribute describes the relationship between the HTML file and the CSS file. Because you are linking to a stylesheet, the value should be set to stylesheet.
 ___
+
 - "*" - The universal selector. Means "all elements".
 
 - ***.nameclass*** - To select an HTML element by ***CLASS***.
@@ -26,10 +27,12 @@ ___
 
 ***IDs are more specific than classes, and classes are more specific than type. That means IDs will override any styles from a class, and classes will override any styles from a type selector.***
 ___
+
 ***Pseudo-class*** - user interaction, site navigation, and position in the document. (:focus, :visited, :disabled, :hover, :active)
 
 - ***nameselector:pseudoclass*** 
 ___
+
 ***Chaining*** - combining multiple selectors.
 
 -  ***nameselector.nameclass***
@@ -44,6 +47,7 @@ ___
 
 - ***name, name***
 ___
+
 ***Visual Rules***
 
 - ***font-family*** - To change the typeface of text on your web page.
@@ -54,8 +58,11 @@ ___
 - ***text-align*** - property places text in the left, right, or center of its parent container. 
 
 (***left*** — aligns text to the left side of its parent element, which in this case is the browser.
+
 ***center*** — centers text inside of its parent element.
+
 ***right*** — aligns text to the right side of its parent element.
+
 ***justify***— spaces out text in order to align with the right and left side of the parent element.)
 - ***color*** - defines the color of the text.
 -  ***background-color***  - this property styles an element’s background color.
@@ -66,3 +73,35 @@ ___
 - ***!important*** - will override any style, however it should almost never be used, as it is extremely difficult to override.
 ___
 
+***Introduction to the Box Model***
+
+-  ***width and height***  - The width and height of the content area.
+- ***min-width*** — this property ensures a minimum width of an element’s box.
+- ***max-width***  — this property ensures a maximum width of an element’s box.
+- ***min-height*** — this property ensures a minimum height for an element’s box.
+- ***max-height*** — this property ensures a maximum height of an element’s box.
+- ***padding*** - The amount of space between the content area and the border.
+- ***border*** - The thickness and style of the border surrounding the content area and padding.
+
+(Borders can be set with a specific width, style, and color)
+- ***border-radius*** - modify the corners of an element’s border box.
+- ***margin*** - The amount of space between the border and the outside edge of the element.
+
+(***margin: 0 auto*** - will center the divs in their containing elements. The 0 sets the top and bottom margins to 0 pixels. The auto value instructs the browser to adjust the left and right margins until the element is centered within its containing element.)
+- ***overflow*** -  controls what happens to content that spills, or overflows, outside its box.
+
+(***hidden***  —when set to this value, any content that overflows will be hidden from view.
+
+***scroll*** —when set to this value, a scrollbar will be added to the element’s box so that the rest of the content can be viewed by scrolling.
+
+***visible***—when set to this value, the overflow content will be displayed outside of the containing element. Note, this is the default value.
+)
+- ***Visibility*** - elements can be hidden from view.
+(***hidden*** — hides an element.
+
+***visible*** — displays an element.
+
+***collapse*** — collapses an element.)
+___
+
+***Change the Box Model***
