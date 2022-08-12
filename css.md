@@ -10,3 +10,19 @@ ___
 
 ***Value*** — The second part of the declaration that signifies the value of the property.
 
+***href*** — like the anchor element, the value of this attribute must be the address, or path, to the CSS file.
+
+***rel***  — this attribute describes the relationship between the HTML file and the CSS file. Because you are linking to a stylesheet, the value should be set to stylesheet.
+___
+"*" - The universal selector. Means "all elements".
+
+***.nameclass*** - To select an HTML element by ***CLASS***.
+
+***#nameid*** - To select an HTML element by ***ID***.
+
+***nameselector[nametribute * = 'lastname']*** 
+___
+***Pseudo-class*** - user interaction, site navigation, and position in the document. (:focus, :visited, :disabled, :hover, :active)
+
+***nameselector:pseudoclass*** 
+
