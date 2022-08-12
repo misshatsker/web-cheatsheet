@@ -44,4 +44,25 @@ ___
 
 - ***name, name***
 ___
+***Visual Rules***
+
+- ***font-family*** - To change the typeface of text on your web page.
+
+(When the name of a typeface consists of more than one word, it’s a best practice to enclose the typeface’s name in quotes)
+- ***font-size***  - To change the size of text on your web page.
+-  ***font-weight*** - controls how bold or thin text appears.
+- ***text-align*** - property places text in the left, right, or center of its parent container. 
+
+(***left*** — aligns text to the left side of its parent element, which in this case is the browser.
+***center*** — centers text inside of its parent element.
+***right*** — aligns text to the right side of its parent element.
+***justify***— spaces out text in order to align with the right and left side of the parent element.)
+- ***color*** - defines the color of the text.
+-  ***background-color***  - this property styles an element’s background color.
+-  ***opacity*** - is the measure of how transparent an element is.
+- ***background-image***  - to make the background of an element an image.
+
+(background-image: url(''))
+- ***!important*** - will override any style, however it should almost never be used, as it is extremely difficult to override.
+___
 
