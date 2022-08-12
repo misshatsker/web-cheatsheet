@@ -14,15 +14,34 @@ ___
 
 ***rel***  — this attribute describes the relationship between the HTML file and the CSS file. Because you are linking to a stylesheet, the value should be set to stylesheet.
 ___
-"*" - The universal selector. Means "all elements".
+- "*" - The universal selector. Means "all elements".
 
-***.nameclass*** - To select an HTML element by ***CLASS***.
+- ***.nameclass*** - To select an HTML element by ***CLASS***.
 
-***#nameid*** - To select an HTML element by ***ID***.
+- ***#nameid*** - To select an HTML element by ***ID***.
 
-***nameselector[nametribute * = 'lastname']*** 
+-  ***nameselector[nametribute * = 'lastname']*** 
+
+***Classes can be reusable, while IDs can only be used once.***
+
+***IDs are more specific than classes, and classes are more specific than type. That means IDs will override any styles from a class, and classes will override any styles from a type selector.***
 ___
 ***Pseudo-class*** - user interaction, site navigation, and position in the document. (:focus, :visited, :disabled, :hover, :active)
 
-***nameselector:pseudoclass*** 
+- ***nameselector:pseudoclass*** 
+___
+***Chaining*** - combining multiple selectors.
+
+-  ***nameselector.nameclass***
+___
+***Descendant Combinator*** -  supports selecting elements that are nested within other HTML elements, also known as descendants.
+
+- ***.nameclass nameselector***
+
+- ***nameselector nameselector***
+___
+***Multiple Selectors*** -  In order to make CSS more concise, it’s possible to add CSS styles to multiple CSS selectors all at once. This prevents writing repetitive code.
+
+- ***name, name***
+___
 
