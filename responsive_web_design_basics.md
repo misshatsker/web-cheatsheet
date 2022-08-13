@@ -70,11 +70,15 @@ ___
 - flex-end.	Items are positioned at the end of the container	
 - baseline.	Items are positioned at the baseline of the container.
 
-***flex-wrap*** - property specifies whether the flexible items should wrap or not.
+***align-content*** - property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines.
 
-- nowrap.	Default value. Specifies that the flexible items will not wrap	
-- wrap.	Specifies that the flexible items will wrap if necessary	
-- wrap-reverse.	Specifies that the flexible items will wrap, if necessary, in reverse order.
+- stretch.	Default value. Lines stretch to take up the remaining space	
+- center.	Lines are packed toward the center of the flex container	
+- flex-start.	Lines are packed toward the start of the flex container	
+- flex-end.	Lines are packed toward the end of the flex container	
+- space-between.	Lines are evenly distributed in the flex container	
+- space-around.	Lines are evenly distributed in the flex container, with half-size spaces on either end	
+- space-evenly.	Lines are evenly distributed in the flex container, with equal space around them.
 
 ***align-self*** - property specifies the alignment for the selected item inside the flexible container.
 
@@ -84,6 +88,12 @@ ___
 - flex-start.	The element is positioned at the beginning of the container	
 - flex-end.	The element is positioned at the end of the container	
 - baseline.	The element is positioned at the baseline of the container.
+
+***flex-wrap*** - property specifies whether the flexible items should wrap or not.
+
+- nowrap.	Default value. Specifies that the flexible items will not wrap	
+- wrap.	Specifies that the flexible items will wrap if necessary	
+- wrap-reverse.	Specifies that the flexible items will wrap, if necessary, in reverse order.
 
 ***order*** - property specifies the order of a flexible item relative to the rest of the flexible items inside the same container.
 
@@ -113,7 +123,29 @@ The flex property is a shorthand property for:
 -  row-reverse.	Same as row, but in reverse order	
 - column.	The flexible items are displayed vertically, as a column	
 - column-reverse.	Same as column, but in reverse order.
+
+***flex-flow*** - property is a shorthand property for: ***flex-direction***,
+***flex-wrap***.
+
+- flex-direction.	Possible values:
+row
+row-reverse
+column
+column-reverse
+initial
+inherit
+Default value is "row".
+- flex-wrap. Possible values:
+nowrap
+wrap
+wrap-reverse
+initial
+inherit
+Default value is "nowrap".
+
+
 ___
+
 
 
 
