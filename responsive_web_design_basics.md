@@ -50,6 +50,8 @@ To insert a breakpoint at 600px, create two media queries at the end of your CSS
 
 ![](/media/15.jpg)
 ___
+***FLEX***
+
 ***display*** - specifies the display behavior (the type of rendering box) of an element.
 - display: flex - Displays an element as a block-level flex container.
 - display: inline-flex - Displays an element as an inline-level flex container.
@@ -142,10 +144,9 @@ wrap-reverse
 initial
 inherit
 Default value is "nowrap".
-
-
 ___
 
+***GRID***
 
 
 
