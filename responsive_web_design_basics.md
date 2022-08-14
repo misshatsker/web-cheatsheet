@@ -148,6 +148,82 @@ ___
 
 ***GRID***
 
+***display***
+- ***display: grid*** - Displays an element as a block-level grid container. Occupies the entire width of the parent.
+- ***inline-grid*** - Displays an element as an inline-level grid container. The width of the object is equal to the width of the content.
+
+***grid-template-rows*** - property specifies the number (and the heights) of the rows in a grid layout.
+- none.	No size is set. Rows are created if needed	
+- auto.	The size of the rows is determined by the size of the container, and on the size of the content of the items in the row	
+- max-content.	Sets the size of each row to depend on the largest item in the row	
+- min-content.	Sets the size of each row to depend on the smallest item in the row	
+- length.	Sets the size of the rows, by using a legal length value.
+
+***grid-template-columns*** - property specifies the number (and the widths) of columns in a grid layout.
+
+- none.	Default value. Columns are created if needed	
+- auto.	The size of the columns is determined by the size of the container and on the size of the content of the items in the column	
+- max-content.	Sets the size of each column to depend on the largest item in the column	
+- min-content.	Sets the size of each column to depend on the smallest item in the column	
+- length.	Sets the size of the columns, by using a legal length value.
+
+***1fr*** - unit of flexibility. distributes the column width space evenly, trying to fill the entire grid container.
+
+***grid-template-areas*** - property specifies areas within the grid layout.
+
+Each area is defined by apostrophes. Use a period sign to refer to a grid item with no name.
+
+- none.	Default value. No named grid areas	
+- itemnames.	A sequence that specifies how each columns and row should display.
+
+![](/media/17.jpg)
+
+***grid-area*** - property specifies a grid item's size and location in a grid layout, and is a shorthand property for the following properties:
+
+- grid-row-start
+- grid-column-start
+- grid-row-end
+- grid-column-end.
+
+![](/media/18.jpg)
+
+***grid-template*** - property is a shorthand property for the following properties:
+
+- grid-template-rows /
+- grid-template-columns
+- grid-template-areas.
+
+(e.g.- grid-template: 150px / auto auto auto;)
+
+***grid-auto-rows*** - property sets a size for the rows in a grid container.
+
+This property affects only rows with the size not set.
+
+***grid-auto-columns*** - property sets a size for the columns in a grid container.
+
+This property affects only columns with the size not set.
+
+***grid-auto-flow*** - property controls how auto-placed items get inserted in the grid.
+
+- row.	Default value. Places items by filling each row	
+- column. Places items by filling each column	
+- dense. Place items to fill any holes in the grid	
+- row dense. Places items by filling each row, and fill any holes in the grid	
+- column dense.	Places items by filling each column, and fill any holes in the grid.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
