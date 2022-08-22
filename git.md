@@ -152,3 +152,37 @@ Globbing lets you use special characters to match patterns/characters. In the .g
 - a/b/z
 - a/b/c/z
 ___
+***git tag*** - command is used to add a marker on a specific commit. The tag does not move around as new commits are added.
+- add a tag to the most recent commit
+- add a tag to a specific commit if a SHA is passed.
+
+- A Git tag can be deleted with the -d flag (for delete!) and the name of the tag.
+___
+***git branch*** - command is used to manage branches in Git.
+- list out local branches
+- create new branches
+- remove branches.
+___
+***git merge*** - command is used to combine branches in Git.
+
+There are two types of merges:
+
+- Fast-forward merge – the branch being merged in must be ahead of the checked out branch. The checked out branch's pointer will just be moved forward to point to the same commit as the other branch.
+- the regular type of merge
+- two divergent branches are combined
+- a merge commit is created.
+___
+***Merge Conflict***
+
+To resolve the conflict in a file:
+
+- locate and remove all lines with merge conflict indicators
+- determine what to keep
+- save the file(s)
+- stage the file(s)
+- make a commit.
+
+Be careful that a file might have merge conflicts in multiple parts of the file, so make sure you check the entire file for merge conflict indicators - a quick search for <<< should help you locate all of them.
+___
+
+

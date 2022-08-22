@@ -211,6 +211,29 @@ This property affects only columns with the size not set.
 - row dense. Places items by filling each row, and fill any holes in the grid	
 - column dense.	Places items by filling each column, and fill any holes in the grid.
 
+***grid-column-start*** - property defines on which column-line the item will start.
+
+- auto.	Default value. The item will be placed following the flow	
+-  span n.	Specifies the number of columns the item will span	
+- column-line.	Specifies on which column to start the display of the item.
+
+***grid-column-end*** - property defines how many columns an item will span, or on which column-line the item will end.
+
+- auto.	Default value. The item will span one column	
+- span n.	Specifies the number of columns the item will span	
+- column-line.	Specifies on which column to end the display of the item.
+
+***grid-row-start*** - property defines on which row-line the item will start.
+
+- auto.	Default value. The item will be placed by following the flow.	
+- row-line.	Specifies on which row to start the display of the item.
+
+***grid-row-end*** - property defines how many rows an item will span, or on which row-line the item will end.
+
+- auto.	Default value. The item will span one row.	
+- span n.	Specifies the number of rows the item will span.	
+- row-line.	Specifies on which row to end the display of the item.
+
 
 
 
