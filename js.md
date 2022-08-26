@@ -116,6 +116,16 @@ const copy = arr.slice(0, 2);
 copy // [1, 2]
 ```
 
+Could be used for array cloning
+
+```js
+const arr = [1, 2, 3, 4];
+const copy = arr.slice(); // [1, 2, 3, 4]
+```
+
+- `sort(function ownSort(a, b) {...})`
+
+
 ##### Object
 
 * How to create an object:
@@ -238,4 +248,110 @@ A JavaScript function is a block of code designed to perform a particular task.
 function myFunction(p1, p2) {
   return p1 * p2; // The function returns the product of p1 and p2
 }
+```
+Return Largest Numbers in Arrays
+``` js 
+function maxInArr(arr) {
+  let max = -Infinity;
+  for (let i = 0; i <arr.length; i++) {
+    let current = arr[i];
+    if (max < current){
+      max = current;
+    }
+  }
+  return max;
+}
+
+function largestOfFour(arrOfArrs) {
+  let result = [];
+  for (let i = 0; i <arrOfArrs.length; i++) {
+    let currentArr = arrOfArrs[i];
+    let currentMax = maxInArr(currentArr);
+    result.push(currentMax); 
+  }
+  
+  return result;
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+```
+
+Repeat string N times
+
+```js
+function repeatStringNumTimes(str, num) {
+  if (num === 0) {
+    return "";
+  }
+
+  let res = "";
+  for (let i = 0; i < num; i++) {
+    res += str;
+  }
+
+  return res;
+}
+
+repeatStringNumTimes("abc", 3);
+```
+
+Truncate a string
+
+```js
+function truncateString(str, num) {
+  if (str.length <= num)  {
+    return str;
+  }
+  return str.slice(0, num) + "...";
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
+```
+
+Chunky Monkey, split array into sub-arrays by size N
+
+```js
+function chunkArrayInGroups(arr, size) {
+  let result = [];
+  let resultArrI = 0;
+  for (let i = 0; i < arr.length; i++) {
+    let curElem = arr[i];
+    if (result[resultArrI] == undefined) {
+      result[resultArrI] = [curElem];
+    } else {
+      result[resultArrI].push(curElem);
+    }
+
+    if (result[resultArrI].length === size) {
+      resultArrI++;
+    }
+  }
+  return result;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+```
+
+#### Prototype
+
+```js
+// The global variable
+const s = [23, 65, 98, 5];
+
+Array.prototype.myMap = function(callback) {
+  const newArray = [];
+  const targetArray = this.slice();
+  // Only change code below this line
+
+  for (let i = 0; i < targetArray.length; i++) {
+    newArray.push(callback(targetArray[i]))
+  }
+
+  // Only change code above this line
+  return newArray;
+};
+
+const new_s = s.myMap(function(item) {
+  return item * 2;
+});
 ```
