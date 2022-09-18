@@ -32,7 +32,15 @@ typeof true // "boolean"
 typeof ({}) // "object"
 typeof null // "object" *well-know issue
 ```
+___
 
+* How to get the value of the last letter of the string:
+
+```js 
+const firstName = "Ada";
+const lastLetter = firstName[firstName.length - 1];
+```
+___
 ##### String
 
 - `split(str)`
@@ -53,6 +61,7 @@ letters // ['j', 'u', 's', 't', ' ', 's', 'o', 'm', 'e', ' ', 'w', 'o', 'r', 'd'
 ```js
 const arr = [1, true, ['str']];
 ```
+___
 
 * How to get array element:
 
@@ -61,7 +70,7 @@ const arr = [1, true, ['str', 2]];
 arr[2] // ['str', 2]
 arr[2][0] // 'str'
 ```
-
+___
 * How to update array element:
 
 ```js
@@ -69,6 +78,25 @@ const arr = [1, true, ['str', 2]];
 arr[1] = false; 
 arr // [1, false, ['str', 2]]
 ```
+___
+
+*  Access Multi-Dimensional Arrays With Indexes
+
+```js
+const arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14]
+];
+
+const subarray = arr[3];
+const nestedSubarray = arr[3][0];
+const element = arr[3][0][1];// element = 11
+```
+___
+
+* To append element to the end of an array
 
 - `push(element)`
 
@@ -78,6 +106,9 @@ const res = arr.push(4);
 arr // [1, 2, 3, 4]
 res // 4 - length of updated array
 ```
+___
+
+* Remove the last element from an array and returns that element.
 
 - `pop()`
 
@@ -87,15 +118,9 @@ const res = arr.pop();
 arr // [1, 2]
 res // 3
 ```
+___
 
-- `unshift(element)`
-
-```js
-const arr = [1, 2, 3];
-const res = arr.unshift(0);
-arr // [0, 1, 2, 3]
-res // 4 - length of updated array
-```
+* Remove the first element from an array and returns that element.
 
 - `shift()`
 
@@ -105,7 +130,19 @@ const res = arr.shift();
 arr // [2, 3]
 res // 1
 ```
+___
 
+* To append data to the beginning of an array
+
+- `unshift(element)`
+
+```js
+const arr = [1, 2, 3];
+const res = arr.unshift(0);
+arr // [0, 1, 2, 3]
+res // 4 - length of updated array
+```
+___
 - `slice(startIndex, endIndex)`
 
 Return copy of array part
@@ -122,7 +159,7 @@ Could be used for array cloning
 const arr = [1, 2, 3, 4];
 const copy = arr.slice(); // [1, 2, 3, 4]
 ```
-
+___
 - `sort(function ownSort(a, b) {...})`
 
 
@@ -330,6 +367,27 @@ function chunkArrayInGroups(arr, size) {
 }
 
 chunkArrayInGroups(["a", "b", "c", "d"], 2);
+```
+
+Find all array objects that has the same key(s)/value(s) as source.
+
+```js
+function whatIsInAName(collection, source) {
+  const arr = [];
+  // Only change code below this line
+  const sourceKeys = Object.keys(source);
+
+  const filtered = collection.filter((obj) =>
+    sourceKeys.every((key) => obj[key] === source[key])
+  );
+
+  arr.push(...filtered);
+
+  // Only change code above this line
+  return arr;
+}
+
+whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
 ```
 
 #### Prototype
